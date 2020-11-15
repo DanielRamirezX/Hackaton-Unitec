@@ -12,7 +12,7 @@
 
 body {
   color: black;
-  background-color: white;
+  background-color: var(--bg-body);
   margin: 0;
   padding: 0;
 }
@@ -158,7 +158,20 @@ header {
 }
 
 .card-content {
-  display: block;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 10px;
+}
+
+.card-content-inverse {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 10px;
+}
+
+.text-card{
+  text-align: center;
+  color: var(--text-primary);
 }
 
 .main-home-img {
@@ -334,27 +347,30 @@ header {
 }
 
 .dark {
-  --text-primary: #b6b6b6;
+  --text-primary: #ffffff;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-primary-item: rgb(81, 2, 105);
   --bg-secondary: #141418;
+  --bg-body: rgb(155, 155, 155);
 }
 
 .light {
   --text-primary: #1f1f1f;
   --text-secondary: #000000;
-  --bg-primary: #ffffff;
+  --bg-primary: #4FB6A9;
   --bg-primary-item: rgb(214, 211, 211);
   --bg-secondary: #e4e4e4;
+  --bg-body: white;
 }
 
 .solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-primary-item: rgb(255, 174, 0);
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --bg-primary: #e7a559;
+  --bg-primary-item: #f5e5b8;
   --bg-secondary: #f5e5b8;
+  --bg-body: white;
 }
 
 .theme-icon {
