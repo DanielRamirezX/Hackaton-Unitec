@@ -166,6 +166,43 @@ header {
   flex-direction: row-reverse;
 }
 
+.card-peticion{
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 1rem;
+  box-shadow: 0px 30px 60px rgba(141, 139, 139, 0.2);
+  border-radius: .9rem;
+  border: .1rem solid rgb(163, 133, 133);
+  align-items: center;
+  margin-bottom: .5rem;
+  flex-direction: row;
+  text-align: left;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 0rem;
+}
+
+.card-peticion-descripcion{
+  margin-left: 2rem;
+}
+
+.card-peticion-data{
+  display: grid;
+  grid-template-columns: 3% 37% 53%;
+  align-items: center;
+  justify-items: left;
+  margin-bottom: 1rem;
+}
+
+.card-link{
+  text-decoration: none;
+  color: white;
+}
+
+.card-link:hover {
+  color: var(--text-link);
+}
+
 .text-card{
   text-align: center;
   color: var(--text-primary);
@@ -307,6 +344,14 @@ header {
     flex-direction: column;
   }
 
+  .card-peticion-data{
+    display: grid;
+    grid-template-columns: 10% 37% 33%;
+    align-items: center;
+    justify-items: left;
+    margin-bottom: 1rem;
+  }
+
   .main-home-text {
     max-width: 100%;
   }
@@ -358,6 +403,7 @@ header {
   --bg-primary-item: rgb(81, 2, 105);
   --bg-secondary: #141418;
   --bg-body: rgb(155, 155, 155);
+  --text-link: #ff189f;
 }
 
 .light {
@@ -367,6 +413,7 @@ header {
   --bg-primary-item: rgb(214, 211, 211);
   --bg-secondary: #e4e4e4;
   --bg-body: white;
+  --text-link: #000000;
 }
 
 .solar {
@@ -376,6 +423,7 @@ header {
   --bg-primary-item: #f5e5b8;
   --bg-secondary: #f5e5b8;
   --bg-body: white;
+  --text-link: #000000;
 }
 
 .theme-icon {
