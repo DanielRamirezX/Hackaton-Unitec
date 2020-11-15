@@ -314,6 +314,9 @@ header {
   color: var(--text-secondary);
 }
 
+.element-style {
+  width: 100%;
+}
 
 /*------------------Responsive Design-----------------------*/
 
@@ -464,4 +467,14 @@ header {
 
 .solar #solarIcon {
   display: block;
+}
+
+input[type="text"]
+{
+    background: #E3E3E3;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    size: auto;
+    font-size: 20px;
 }
