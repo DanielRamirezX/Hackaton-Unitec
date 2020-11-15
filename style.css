@@ -138,6 +138,12 @@ header {
   z-index: 1;
   text-align: center;
   position: fixed;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.text-header{
+  margin-left: 200px;
 }
 
 
@@ -201,6 +207,20 @@ header {
 
 .card-link:hover {
   color: var(--text-link);
+}
+
+
+.add-card{
+  background-color: var(--bg-primary);
+  width: 10rem;
+  position: absolute;
+  right: 14;
+  bottom: 5.3rem;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 5rem;
+  z-index: 5;
 }
 
 .text-card{
@@ -327,6 +347,10 @@ header {
 
   header {
     width: 100vw;
+  }
+
+  .text-header{
+    margin-left: 40px;
   }
 
   .card{
