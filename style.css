@@ -35,6 +35,15 @@ main {
   margin-top: 4rem;
 }
 
+.warning{
+  text-align: center;
+  width: 100%;
+}
+
+.text-warning{
+  font-size: xx-large;
+}
+
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -343,6 +352,10 @@ header {
   main {
     margin: 0;
     margin-top: 4rem;
+  }
+
+  .text-warning{
+    font-size: x-large;
   }
 
   header {
